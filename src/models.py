@@ -11,9 +11,9 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = 'user'
     id = Column(Integer, primary_key=True)
-    username = Column(String(20), nullable=False)
-    fist_name = Column(String(20), nullable=False)
-    last_name = Column(String(20), nullable=False)
+    username = Column(String(30), nullable=False)
+    fist_name = Column(String(30), nullable=False)
+    last_name = Column(String(30), nullable=False)
     email = Column(String(250), nullable=False)
 
 class Media(Base):
