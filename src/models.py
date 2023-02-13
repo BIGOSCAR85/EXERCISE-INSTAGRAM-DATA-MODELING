@@ -22,7 +22,7 @@ class Media(Base):
     _type = Column(String(250), nullable=False)
     url = Column(String(250), nullable=False)
     post_id = Column(Integer, ForeignKey('post.id'), nullable=False)
-    person = relationship(Person)
+    
 
 class Post(Base):
     __tablename__ = 'post'
